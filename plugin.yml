@@ -1,0 +1,9 @@
+name: CustomCraft
+authors: [TeamBixby, alvin0319]
+main: TeamBixby\CustomCraft
+version: 1.0.0
+api: 3.0.0
+
+permissions:
+  customcraft.command:
+    default: op
