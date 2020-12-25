@@ -204,6 +204,7 @@ class CustomCraft extends PluginBase{
 				return;
 			}
 			$this->registerFurnaceRecipe($input, $output);
+			$player->sendMessage("Success");
 		});
 		$border = ItemFactory::get(ItemIds::IRON_BARS);
 		$border->setNamedTagEntry(new ByteTag("border", (int) true));
