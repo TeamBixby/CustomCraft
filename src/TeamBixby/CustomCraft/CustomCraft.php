@@ -185,7 +185,7 @@ class CustomCraft extends PluginBase{
 
 		$menu = InvMenu::create(InvMenu::TYPE_CHEST);
 		$menu->setName("Add furnace recipe");
-		$menu->setListener(function(InvMenuTransaction $action) use ($menu, $inputSlot, $outputSlot) : InvMenuTransactionResult{
+		$menu->setListener(function(InvMenuTransaction $action) : InvMenuTransactionResult{
 			$discard = $action->discard();
 			$item = $action->getOut();
 
