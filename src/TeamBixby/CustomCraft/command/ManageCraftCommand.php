@@ -32,6 +32,8 @@ class ManageCraftCommand extends PluginCommand{
 			case "addfurnace":
 				CustomCraft::getInstance()->sendAddFurnaceMenu($sender);
 				break;
+			default:
+				$sender->sendMessage("Usage: /mcc [addcraft|addfurnace]");
 		}
 		return true;
 	}
