@@ -1,0 +1,12 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/TeamBixby/CustomCraft
+build-by-default: true
+branches:
+- master
+projects:
+  CustomCraft:
+    path: ""
+    libs:
+      - src: muqsit/InvMenu/InvMenu
+        branch: master
+        version: ^4.0.1
+...
