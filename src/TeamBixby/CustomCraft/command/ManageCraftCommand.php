@@ -26,8 +26,13 @@ class ManageCraftCommand extends PluginCommand{
 			return false;
 		}
 		switch($args[0] ?? "x"){
-			case "add":
-
+			case "addcraft":
+				CustomCraft::getInstance()->sendAddCraftingMenu($sender);
+				break;
+			case "addfurnace":
+				CustomCraft::getInstance()->sendAddFurnaceMenu($sender);
+				break;
 		}
+		return true;
 	}
 }

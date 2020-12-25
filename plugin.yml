@@ -1,8 +1,11 @@
 name: CustomCraft
 authors: [TeamBixby, alvin0319]
-main: TeamBixby\CustomCraft
+main: TeamBixby\CustomCraft\CustomCraft
 version: 1.0.0
 api: 3.0.0
+
+softdepend:
+  - CustomItemLoader # Prevent 'Unmapped ID:metadata combination' error
 
 permissions:
   customcraft.command:
